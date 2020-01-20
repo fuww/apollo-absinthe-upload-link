@@ -14,6 +14,7 @@ const request = opts =>
     headers: opts.headers,
     withCredentials: opts.withCredentials,
     crossDomain: opts.crossDomain,
+    progressSubscriber: opts.progressSubscriber,
   }).pipe(map(({ response }) => response))
 
 export default request
